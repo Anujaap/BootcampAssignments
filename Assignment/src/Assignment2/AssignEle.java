@@ -2,7 +2,7 @@ package Assignment2;
 
 public class AssignEle {
     public static void main(String[] args) {
-        Child c=new Child();
+        Grandparent c=new Child();
     }
 }
 class Parent extends Grandparent {

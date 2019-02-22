@@ -11,7 +11,9 @@ public class AssignThree {
             Class.forName("AssignThree");
         }catch(ArithmeticException ae){
             System.out.println(ae);
-        }catch(ClassNotFoundException e){
+        }catch(ClassNotFoundException ce){
+            System.out.println(ce);
+        }catch (Exception e){
             System.out.println(e);
         }finally{
             System.out.println("Finally block called");

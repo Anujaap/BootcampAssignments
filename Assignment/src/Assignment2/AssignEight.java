@@ -1,6 +1,6 @@
 package Assignment2;
 
-//WAP to show object cloning in java using cloneable and copy constructor both.
+//WAP to show object cloning in java using cloneable.
 public class AssignEight implements Cloneable{
         int roll_no;
         String fname;

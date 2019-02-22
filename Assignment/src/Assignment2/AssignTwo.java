@@ -1,6 +1,6 @@
 package Assignment2;
 
-//WAP to produce NoClassDefFoundError and ClassNotFoundException exception.
+//WAP to produce ClassNotFoundException exception.
  public class AssignTwo {
     public void display(){
         System.out.println("Hello");

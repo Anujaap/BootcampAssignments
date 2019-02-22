@@ -10,7 +10,7 @@ public class AssignTwe {
         }
         catch (CustomException e)
         {
-            e.printStackTrace();
+            System.out.println(e);;
         }
     }
 }
