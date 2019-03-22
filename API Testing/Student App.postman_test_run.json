@@ -1,0 +1,410 @@
+{
+	"id": "cfa22ded-c626-4a87-a050-c3f8cf0cf8b2",
+	"name": "Student App",
+	"allTests": [],
+	"timestamp": "2019-03-22T06:51:56.178Z",
+	"collection_id": "e9f97c56-18c0-4a3a-8eb9-c12b6fd07955",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "e9f97c56-18c0-4a3a-8eb9-c12b6fd07955",
+		"name": "Student App",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"8d440978-27d4-4f7a-afab-225446dd6f04",
+			"336cce98-27ca-4e08-916b-59a62671db6f",
+			"4e4d0361-5b28-4d6d-97f4-5ad264223350",
+			"d8a509f7-b364-40cf-bfe7-d7caaf598631",
+			"d55ef5b3-040e-4004-8976-cfe88d2825c5",
+			"f1193c61-36c4-4b8f-8895-1f22a0385af8",
+			"c8875de2-fe0e-47f5-a0de-a448cb04c056"
+		],
+		"folders_order": [],
+		"owner": "6994432",
+		"permissions": {
+			"owner": "6994432",
+			"team": {
+				"id": "312910",
+				"access": "read"
+			},
+			"users": []
+		},
+		"favorite": false,
+		"shared": true,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "One",
+			"id": "8d440978-27d4-4f7a-afab-225446dd6f04",
+			"url": "http://localhost:8080/student/list",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"245"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "245",
+			"totalRequestTime": "245",
+			"iterationResults": {}
+		},
+		{
+			"name": "Two",
+			"id": "336cce98-27ca-4e08-916b-59a62671db6f",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"108"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "108",
+			"totalRequestTime": "108",
+			"iterationResults": {}
+		},
+		{
+			"name": "Three",
+			"id": "4e4d0361-5b28-4d6d-97f4-5ad264223350",
+			"url": "http://localhost:8080/student/list?programme=Financial%20Analysis",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {},
+			"times": [
+				"19"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "19",
+			"totalRequestTime": "19",
+			"iterationResults": {}
+		},
+		{
+			"name": "Four",
+			"id": "d8a509f7-b364-40cf-bfe7-d7caaf598631",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": "{\"error\":\"Email address already exists\"}",
+					"expected": "anuja.pandey@tothenew.com",
+					"message": "expected response body to equal 'anuja.pandey@tothenew.com' but got '{\"error\":\"Email address already exists\"}'",
+					"name": "AssertionError",
+					"showDiff": true,
+					"stack": "AssertionError: expected response body to equal 'anuja.pandey@tothenew.com' but got '{\"error\":\"Email address already exists\"}'\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:25)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Body is correct",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"31"
+			],
+			"allTests": [
+				{
+					"Body is correct": false
+				}
+			],
+			"time": "31",
+			"totalRequestTime": "31",
+			"iterationResults": {}
+		},
+		{
+			"name": "Five",
+			"id": "d55ef5b3-040e-4004-8976-cfe88d2825c5",
+			"url": "http://localhost:8080/student",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {
+				"error": {
+					"actual": "{\"error\":\"Please correct the following errors\",\"fieldErrors\":{\"email\":\"not a well-formed email address\"}}",
+					"message": "expected '{\"error\":\"Please correct the following errors\",\"fieldErrors\":{\"email\":\"not a well-formed email address\"}}' to include '@'",
+					"name": "AssertionError",
+					"showDiff": false,
+					"stack": "AssertionError: expected '{\"error\":\"Please correct the following errors\",\"fieldErrors\":{\"email\":\"not a well-formed email address\"}}' to include '@'\n    at eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:5:38)\n    at Postman.n.test (evalmachine.<anonymous>:75:212)\n    at Object.eval (eval at exec (evalmachine.<anonymous>:12494:2548), <anonymous>:4:4)\n    at Uniscope.exec (evalmachine.<anonymous>:12494:2583)\n    at module.exports (evalmachine.<anonymous>:63:538)\n    at Object.<anonymous> (evalmachine.<anonymous>:66:1694)\n    at evalmachine.<anonymous>:16:26\n    at Array.forEach (<anonymous>)\n    at Object.emit (evalmachine.<anonymous>:15:54)\n    at evalmachine.<anonymous>:52:24"
+				},
+				"name": "Body matches string",
+				"status": "fail"
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				"44"
+			],
+			"allTests": [
+				{
+					"Body matches string": false
+				}
+			],
+			"time": "44",
+			"totalRequestTime": "44",
+			"iterationResults": {}
+		},
+		{
+			"name": "Six",
+			"id": "f1193c61-36c4-4b8f-8895-1f22a0385af8",
+			"url": "http://localhost:8080/student/list?programme=Computer%20Science",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Body matches string",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"31"
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": "31",
+			"totalRequestTime": "31",
+			"iterationResults": {}
+		},
+		{
+			"name": "SixOne",
+			"id": "c8875de2-fe0e-47f5-a0de-a448cb04c056",
+			"url": "http://localhost:8080/student/list?programme=Criminology",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"error": null,
+				"name": "Body matches string",
+				"status": "pass"
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"13"
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": "13",
+			"totalRequestTime": "13",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 2,
+	"totalFail": 2,
+	"totalTime": 491,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "One",
+			"id": "8d440978-27d4-4f7a-afab-225446dd6f04",
+			"url": "http://localhost:8080/student/list",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Two",
+			"id": "336cce98-27ca-4e08-916b-59a62671db6f",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Three",
+			"id": "4e4d0361-5b28-4d6d-97f4-5ad264223350",
+			"url": "http://localhost:8080/student/list?programme=Financial%20Analysis",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Four",
+			"id": "d8a509f7-b364-40cf-bfe7-d7caaf598631",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "Five",
+			"id": "d55ef5b3-040e-4004-8976-cfe88d2825c5",
+			"url": "http://localhost:8080/student",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			}
+		},
+		{
+			"name": "Six",
+			"id": "f1193c61-36c4-4b8f-8895-1f22a0385af8",
+			"url": "http://localhost:8080/student/list?programme=Computer%20Science",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "SixOne",
+			"id": "c8875de2-fe0e-47f5-a0de-a448cb04c056",
+			"url": "http://localhost:8080/student/list?programme=Criminology",
+			"time": "2019-03-22T06:51:56.178Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
